@@ -116,7 +116,7 @@ return (<div>{ showpage("list") }</div>)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    "aaaaaaa"
   </React.StrictMode>,
   document.getElementById('root')
 );
