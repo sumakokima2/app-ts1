@@ -80,7 +80,7 @@ const App: React.FC = () => {
      const add = (add:ListItem) => {
       const arr = data.slice();
       const newarr = [...arr,add];
-      newarr.map((ar,index) =>{
+      newarr.forEach((ar,index) =>{
           ar.id = index;
       });
       setdata(newarr);
