@@ -108,8 +108,6 @@ const App: React.FC = () => {
               <ListItems items={data} delate={delate} edit={edit} changepage = {changepage} />
             </div>
             ); 
-        case 'edit' : return <Edit item={selected} edit={edit} changepage={changepage}/>
-        case 'add' :return <Add id ={data.length} add={add} changepage={changepage}/>
       }
     }
 return (<div>{ showpage("list") }</div>)
@@ -117,7 +115,9 @@ return (<div>{ showpage("list") }</div>)
 }
 
 ReactDOM.render(
-    <App />,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
